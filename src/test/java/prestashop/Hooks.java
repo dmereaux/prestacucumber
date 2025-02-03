@@ -23,8 +23,8 @@ public class Hooks {
 
 	@Before
 	public void debut_de_test() throws MalformedURLException {
-//		driver = new ChromeDriver(new ChromeOptions().addArguments("--disable-search-engine-choice-screen"));
-		driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions().addArguments("--disable-search-engine-choice-screen"));
+		driver = new ChromeDriver(new ChromeOptions().addArguments("--disable-search-engine-choice-screen"));
+//		driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions().addArguments("--disable-search-engine-choice-screen"));
 
 
 	}
