@@ -1,5 +1,16 @@
-package pageObject;
 
+package pageObject;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 public class AccueilPage {
 
+
+    public AccueilPage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
+    }
+
+    @FindBy(name = "s")
+    public WebElement champRecherche;
 }

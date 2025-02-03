@@ -1,6 +1,7 @@
 package prestashop;
 
 import io.cucumber.java.en.*;
+import pageObject.AccueilPage;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,9 +15,12 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class StepDefinitionsRecherche {
 	
 	private WebDriver driver = Hooks.getDriver();
+	private AccueilPage  page1;
+	
 
 
 	@When("je fais une recherche avec le mot-clé MUG")

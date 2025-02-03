@@ -7,11 +7,7 @@ Cette fonctionalité permet de chercher un vêtement sur le site MonPrestashop
   Background:
   Given le site est affiché en mode desktop
 
-	@TestSimple
-	Scenario: recherche simple
-	Given je vais sur la page d’accueil de prestashop
-	When je fais une recherche avec le mot-clé MUG
-	Then le message suivant est affiché : Il y a 5 produits.
+
    
 	@TestSimple   
 Scenario Outline: recherche générique
