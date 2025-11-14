@@ -43,5 +43,10 @@ Scenario Outline: recherche infructueuse
      |  xxxxxxxxxxx      | 
      |  yyyyyyyyyyy      |   
 
+@TestPage     
+Scenario: champ recherche sur la page accueil
+	Given un utilisateur de prestashop
+	When je vais sur la page "detail"
+	Then je trouve un champ de recherche
  
   

@@ -1,4 +1,4 @@
-package prestashop;
+package cu.prestashop;
 
 
 
@@ -24,6 +24,17 @@ public class StepDefinitionsCommon {
 			driver.get("http://www.qualifiez.fr/monPrestashop2/prestashop/index.php?controller=contact");
 
 		}
+		else if (page.equals("conexion")) {
+			driver.get("http://www.qualifiez.fr/monPrestashop2/prestashop/index.php?controller=authentication?back=http%3A%2F%2Fwww.qualifiez.fr%2FmonPrestashop2%2Fprestashop%2Findex.php%3Fcontroller%3Dregistration");
+
+		}
+		
+		else if (page.equals("detail")) {
+			driver.get("http://www.qualifiez.fr/monPrestashop2/prestashop/index.php?id_product=2&id_product_attribute=9&rewrite=brown-bear-printed-sweater&controller=product#/1-taille-s");
+
+		}
+
+		
 	}
 
 	@Given("le site est affiché en mode desktop")

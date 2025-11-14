@@ -1,4 +1,4 @@
-package prestashop;
+package cu.prestashop;
 
 import io.cucumber.java.After;
 
@@ -20,18 +20,13 @@ public class Hooks {
 	public static WebDriver getDriver() {
 		return driver;
 	}
-
 	@Before
 	public void debut_de_test() throws MalformedURLException {
-		driver = new ChromeDriver(new ChromeOptions().addArguments("--disable-search-engine-choice-screen"));
-//		driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions().addArguments("--disable-search-engine-choice-screen"));
-
-
+//		driver = new ChromeDriver(new ChromeOptions().addArguments("--disable-search-engine-choice-screen"));
+		driver = driverFactory.makeBrowser(driverFactory.BrowserType.Chrome);
 	}
-
 	@After
 	public void fin_de_test() {
 		driver.quit();
 	}
-
 }

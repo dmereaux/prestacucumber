@@ -1,4 +1,4 @@
-package prestashop;
+package cu.prestashop;
 
 import io.cucumber.java.en.*;
 import pageObject.HeaderPage;

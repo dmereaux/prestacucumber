@@ -1,4 +1,4 @@
-package prestashop;
+package cu.prestashop;
 
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;

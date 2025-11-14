@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import prestashop.Hooks;
+import cu.prestashop.Hooks;
 
 public class RecherchePage {
 //	private WebDriver driver;
